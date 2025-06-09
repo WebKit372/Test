@@ -1,7 +1,10 @@
 package org.example;
 
+
+import ui.Frame;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello1111 world!");
+        Frame frame = new Frame();
     }
 }
