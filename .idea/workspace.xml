@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464219e7-5896-4168-b535-97bee279ae77" name="Changes" comment="wefqwd">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Buttons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Frame.java" afterDir="false" />
+    <list default="true" id="464219e7-5896-4168-b535-97bee279ae77" name="Changes" comment="Сделал более адекватную структуру проекта">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/MyButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/MyFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +67,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "WebKit372"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WebKit372&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/WebKit372/Test.git&quot;,
@@ -88,18 +88,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.untitled1 [:org.example.Main.main()].executor": "Run",
-    "Gradle.untitled1 [assemble].executor": "Run",
-    "Gradle.untitled1 [build].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.untitled1 [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.untitled1 [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.untitled1 [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Pet" />
@@ -132,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749468157143</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Пробую сделать UI">
+      <option name="closed" value="true" />
+      <created>1749475665903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749475665903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wefqwd" />
-    <option name="LAST_COMMIT_MESSAGE" value="wefqwd" />
+    <MESSAGE value="Пробую сделать UI" />
+    <MESSAGE value="Сделал более адекватную структуру проекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал более адекватную структуру проекта" />
   </component>
 </project>
