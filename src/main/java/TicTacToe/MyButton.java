@@ -1,10 +1,10 @@
-package ui;
+package TicTacToe;
 
 import javax.swing.*;
 import java.awt.*;
 
 
-public class MyButton extends JButton {
+class MyButton extends JButton {
     public MyButton(){
         super();
         buttonInit();
