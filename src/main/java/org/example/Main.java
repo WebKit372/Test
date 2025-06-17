@@ -1,7 +1,13 @@
 package org.example;
 
 
+import TicTacToe.TicTacToe;
+import TicTacToe.MyFrame;
 
 public class Main {
+    public static void main(String[] args){
+        TicTacToe game = new TicTacToe(new MyFrame());
+        game.fieldMaking(4);
+    }
 
 }

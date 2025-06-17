@@ -24,7 +24,7 @@ import java.awt.*;
 //        frame.setVisible(true);
 //    }
 //}
-class MyFrame extends JFrame {
+public class MyFrame extends JFrame {
 
     public MyFrame(String title) throws HeadlessException {
         super(title);
@@ -41,20 +41,20 @@ class MyFrame extends JFrame {
     public MyFrame(String title, GraphicsConfiguration gc) {
         super(title, gc);
     }
-    private void init(int size){
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        JPanel panel = new JPanel(new GridLayout(size,size,2 ,2));
-        MyButton[][] buttons = new MyButton[size][size];
-        for (int i = 0; i < size; i++ ){
-            for (int j = 0; j < size; j++){
-                buttons[i][j] = new MyButton(Integer.toString(i) + Integer.toString(j));
-                JPanel buttonPanel = new JPanel();
-                buttonPanel.add(buttons[i][j]);
-                panel.add(buttonPanel);
-            }
-        }
-        this.add(panel);
-        this.setSize(1000, 1000);
-        this.setVisible(true);
-    }
+//    private void init(int size){
+//        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+//        JPanel panel = new JPanel(new GridLayout(size,size,2 ,2));
+//        MyButton[][] buttons = new MyButton[size][size];
+//        for (int i = 0; i < size; i++ ){
+//            for (int j = 0; j < size; j++){
+//                buttons[i][j] = new MyButton(Integer.toString(i) + Integer.toString(j));
+//                JPanel buttonPanel = new JPanel();
+//                buttonPanel.add(buttons[i][j]);
+//                panel.add(buttonPanel);
+//            }
+//        }
+//        this.add(panel);
+//        this.setSize(1000, 1000);
+//        this.setVisible(true);
+//    }
 }
