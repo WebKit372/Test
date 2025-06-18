@@ -2,9 +2,12 @@ package TicTacToe;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 class  MyButton extends JButton {
+    private ButtonAction buttonAction;
     public MyButton(){
         super();
         buttonInit();
@@ -27,10 +30,17 @@ class  MyButton extends JButton {
     }
     private void buttonInit(){
         setPreferredSize(new Dimension(250,250));
-        addActionListener(e -> action());
+        addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                action();
+            }
+        });
+    }
+    public void setButtonAction(ButtonAction buttonAction){
+        this.buttonAction = buttonAction;
     }
     private void action(){
-        setEnabled(false);
-        setText("Rabotaet");
+        buttonAction.execute(this);
     }
 }

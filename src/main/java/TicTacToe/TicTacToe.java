@@ -18,10 +18,24 @@ public class TicTacToe {
                 JPanel buttonPanel = new JPanel();
                 buttonPanel.add(buttons[i][j]);
                 panel.add(buttonPanel);
+                String text = String.format("Pos" +" " + i+" "+ j);
+                buttons[i][j].setButtonAction(new ButtonAction() {
+                    @Override
+                    public void execute(JButton owner) {
+                        owner.setEnabled(false);
+                        owner.setText(text);
+                    }
+                });
             }
         }
         this.gameFrame.add(panel);
-        this.gameFrame.setSize(1000, 1000);
+//        this.gameFrame.setSize(1000, 1000);
         this.gameFrame.setVisible(true);
+        this.gameFrame.pack();
+        this.gameFrame.setLocationRelativeTo(null);
+        this.loseGame();
+    }
+    private void loseGame(){
+        JOptionPane.showMessageDialog(new Frame(), "Ti loh", "Wat", JOptionPane.PLAIN_MESSAGE);
     }
 }
