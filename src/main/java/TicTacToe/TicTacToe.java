@@ -95,14 +95,14 @@ public class TicTacToe {
                 JOptionPane.showMessageDialog(new Frame(), messageText, windowText, JOptionPane.PLAIN_MESSAGE);
             }
         };
-        window.showMessage("Row", "Attention");
+        window.showMessage("Draw", "Attention");
     }
 
 // Checking winning condition for X|O side
     private boolean winCheck(Boolean isX){
         int num = isX?2:1;
         Boolean[] resultOfChecking = new Boolean[(this.size + this.size) + 2];
-//        Check row winning scenario
+//        Check draw winning scenario
         for (int i = 0; i < this.size; i++){
             resultOfChecking[i] = AdditionalLogic.arrayCheck(this.rowValue.get(i).values().toArray(new Integer[this.size]), this.size, new Every<Integer>() {
                 @Override
