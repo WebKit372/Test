@@ -67,11 +67,14 @@ public class TicTacToe {
             this.rowValue.get(xPos).put(yPos,1);
         }
         this.isXTurn = !this.isXTurn;
-        if(!winCheck(true)){
+        if(winCheck(true)){
             winGame(true);
         }
-        if(!winCheck(false)){
+        if(winCheck(false)){
             winGame(false);
+        }
+        if(rowCheck() && !(winCheck(false) || winCheck(true))){
+            rowGame();
         }
     }
 
@@ -84,6 +87,15 @@ public class TicTacToe {
             }
         };
         window.showMessage(text, "Attention");
+    }
+    private void rowGame(){
+        DialogWindow window = new DialogWindow() {
+            @Override
+            public void showMessage(String messageText, String windowText) {
+                JOptionPane.showMessageDialog(new Frame(), messageText, windowText, JOptionPane.PLAIN_MESSAGE);
+            }
+        };
+        window.showMessage("Row", "Attention");
     }
 
 // Checking winning condition for X|O side
@@ -124,7 +136,7 @@ public class TicTacToe {
             });
         }
 //        Check winning by 3 different scenarios
-        return AdditionalLogic.arrayCheck(resultOfChecking, ((this.size + this.size) + 2) , new Every<Boolean>() {
+        return !AdditionalLogic.arrayCheck(resultOfChecking, ((this.size + this.size) + 2) , new Every<Boolean>() {
             @Override
             public boolean execute(Boolean component) {
                 return !component;
@@ -132,4 +144,18 @@ public class TicTacToe {
         });
 
     }
+    private boolean rowCheck() {
+        boolean resultOfChecking;
+        for (int i = 0; i < this.size; i++) {
+            if(!AdditionalLogic.arrayCheck(this.rowValue.get(i).values().toArray(new Integer[this.size]), this.size, new Every<Integer>() {
+                @Override
+                public boolean execute(Integer component) {
+                    return component != 0;
+                }
+            })) {
+                return false;
+            }
+        }
+        return true;
+    };
 }
