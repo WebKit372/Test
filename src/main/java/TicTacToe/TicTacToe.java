@@ -68,10 +68,6 @@ public class TicTacToe {
             this.rowValue.get(xPos).put(yPos,1);
         }
         this.isXTurn = !this.isXTurn;
-        for(Map.Entry<Integer,HashMap<Integer,Integer>> entry: this.rowValue.entrySet()){
-//            System.out.println(entry);
-        }
-//        System.out.println(winCheck(true));
         if(!winCheck(true)){
             winGame(true);
         }
@@ -97,7 +93,7 @@ public class TicTacToe {
         Boolean[] resultOfChecking = new Boolean[(this.size + this.size) + 2];
 //        Check row winning scenario
         for (int i = 0; i < this.size; i++){
-            resultOfChecking[i] = AdditionalLogic.<Integer>arrayCheck(this.rowValue.get(i).values().toArray(new Integer[this.size]), this.size, new Every<Integer>() {
+            resultOfChecking[i] = AdditionalLogic.arrayCheck(this.rowValue.get(i).values().toArray(new Integer[this.size]), this.size, new Every<Integer>() {
                 @Override
                 public boolean execute(Integer component) {
                     return component == num;
@@ -108,7 +104,7 @@ public class TicTacToe {
             for (int j =0; j < this.size; j++){
                 arrayOfY[j] = this.rowValue.get(j).get(i);
             }
-            resultOfChecking[this.size+i] = AdditionalLogic.<Integer>arrayCheck(arrayOfY, this.size, new Every<Integer>() {
+            resultOfChecking[this.size+i] = AdditionalLogic.arrayCheck(arrayOfY, this.size, new Every<Integer>() {
                 @Override
                 public boolean execute(Integer component) {
                     return component == num;
@@ -120,8 +116,8 @@ public class TicTacToe {
             Integer[] arrayDiag = new Integer[this.size];
             for (int j =0; j < this.size; j ++) {
                 arrayDiag[j] = this.rowValue.get(j).get(j);
-            };
-            resultOfChecking[(this.size + this.size)+i] = AdditionalLogic.<Integer>arrayCheck(arrayDiag, this.size, new Every<Integer>() {
+            }
+            resultOfChecking[(this.size + this.size)+i] = AdditionalLogic.arrayCheck(arrayDiag, this.size, new Every<Integer>() {
                 @Override
                 public boolean execute(Integer component) {
                     return component == num;
@@ -129,7 +125,7 @@ public class TicTacToe {
             });
         }
 //        Check winning by 3 different scenarios
-        return AdditionalLogic.<Boolean>arrayCheck(resultOfChecking, ((this.size + this.size) + 2) , new Every<Boolean>() {
+        return AdditionalLogic.arrayCheck(resultOfChecking, ((this.size + this.size) + 2) , new Every<Boolean>() {
             @Override
             public boolean execute(Boolean component) {
                 return !component;
