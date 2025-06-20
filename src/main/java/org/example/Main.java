@@ -2,7 +2,7 @@ package org.example;
 
 
 import TicTacToe.TicTacToe;
-import TicTacToe.MyFrame;
+import Components.MyFrame;
 
 public class Main {
     public static void main(String[] args){

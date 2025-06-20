@@ -1,4 +1,4 @@
-package TicTacToe;
+package Components;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-class  MyButton extends JButton {
+public class  MyButton extends JButton {
+    int xPos;
+    int yPos;
     private ButtonAction buttonAction;
     public MyButton(){
         super();
@@ -42,5 +44,18 @@ class  MyButton extends JButton {
     }
     private void action(){
         buttonAction.execute(this);
+    }
+    public void setXPos(int xPos){
+        this.xPos = xPos;
+    }
+
+    public void setYPos(int yPos) {
+        this.yPos = yPos;
+    }
+    public int getxPos(){
+        return this.xPos;
+    }
+    public int getyPos(){
+        return this.yPos;
     }
 }

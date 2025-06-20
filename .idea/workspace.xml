@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464219e7-5896-4168-b535-97bee279ae77" name="Changes" comment="Сделал более адекватную структуру проекта">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/ButtonAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/DialogWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/AdditionalLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/Every.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/MyButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/MyButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/ButtonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Components/ButtonAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/MyButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Components/MyButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Components/MyFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TicTacToe/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicTacToe/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
@@ -79,12 +83,12 @@
     &quot;assignee&quot;: &quot;WebKit372&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/WebKit372/Test.git&quot;,
-    &quot;accountId&quot;: &quot;c87f323b-e803-4148-99a2-9bc4fc8a6a75&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WebKit372/Test.git",
+    "accountId": "d6de0158-45a0-4954-bd64-860f97ffc829"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -107,6 +111,9 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>
@@ -166,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750158923676</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Сделал более адекватную структуру проекта">
+      <option name="closed" value="true" />
+      <created>1750251265926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750251265926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,5 +212,15 @@
     <MESSAGE value="Пробую сделать UI" />
     <MESSAGE value="Сделал более адекватную структуру проекта" />
     <option name="LAST_COMMIT_MESSAGE" value="Сделал более адекватную структуру проекта" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
