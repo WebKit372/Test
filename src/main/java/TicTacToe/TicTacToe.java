@@ -8,7 +8,6 @@ import Components.MyFrame;
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
-import java.util.Map;
 
 public class TicTacToe {
 //    Making HashMap where X is 2, O is 1, nullable is 0;
