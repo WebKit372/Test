@@ -1,15 +1,12 @@
 package TicTacToe;
 
-import Components.ButtonAction;
-import Components.DialogWindow;
-import Components.MyButton;
-import Components.MyFrame;
+import Components.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 
-public class TicTacToe {
+public class TicTacToe implements Game {
 //    Making HashMap where X is 2, O is 1, nullable is 0;
     HashMap<Integer, HashMap<Integer, Integer>> rowValue;
     int size;
@@ -19,7 +16,8 @@ public class TicTacToe {
         this.gameFrame = frameTemplate;
     }
 
-    public void fieldMaking(int size){
+    @Override
+    public void gameInitiation(int size){
         this.rowValue = new HashMap<>();
         this.size = size;
         this.gameFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -73,11 +71,10 @@ public class TicTacToe {
         if(winCheck(false)){
             winGame(false);
         }
-        if(rowCheck() && !(winCheck(false) || winCheck(true))){
+        if(rowCheck() && !winCheck(false) && !winCheck(true)){
             rowGame();
         }
     }
-
     private void winGame(Boolean isX){
         String text = isX?"Win X": "Win O";
         DialogWindow window = new DialogWindow() {
